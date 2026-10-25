@@ -1,5 +1,5 @@
 -- ==============================================================================
--- ANTIGRAVITY AI PLANNER - COMPLETE SUPABASE DATABASE SCHEMA & RLS POLICIES
+-- AI SCHEDULE - COMPLETE SUPABASE DATABASE SCHEMA & RLS POLICIES
 -- ==============================================================================
 -- Run this complete script in your Supabase SQL Editor (https://supabase.com/dashboard)
 -- It stores ALL planner data:
