@@ -130,7 +130,7 @@ export function getChatSystemPrompt(): string {
   const timeStr = format(now, 'HH:mm');
   const tz = getLocalTimezone();
 
-  return `You are Antigravity AI Planner Assistant, a fast, proactive, and intelligent planning companion powered by Groq.
+  return `You are AI Schedule Assistant, a fast, proactive, and intelligent planning companion powered by Groq.
 Current environment:
 - Date: ${dateStr} (${dayOfWeek})
 - Time: ${timeStr}
