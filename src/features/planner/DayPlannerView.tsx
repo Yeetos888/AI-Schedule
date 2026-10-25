@@ -141,7 +141,7 @@ export const DayPlannerView: React.FC = () => {
         start: item.start,
         end: item.end,
         color: '#8b5cf6',
-        notes: `Time-blocked by Antigravity AI Planner for task: ${item.taskTitle}`,
+        notes: `Time-blocked by AI Schedule for task: ${item.taskTitle}`,
       });
     }
 
