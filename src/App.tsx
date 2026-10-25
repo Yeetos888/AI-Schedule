@@ -102,7 +102,7 @@ export function App() {
 
       {/* Footer */}
       <footer className="w-full border-t border-slate-900 py-4 text-center text-xs text-slate-500 relative z-10">
-        <p>Antigravity AI Planner • Groq LLaMA 3.3 & Supabase Cloud PostgreSQL • Local-First</p>
+        <p>AI Schedule • Groq LLaMA 3.3 & Supabase Cloud PostgreSQL • Local-First</p>
       </footer>
 
       {/* Settings Modal */}
