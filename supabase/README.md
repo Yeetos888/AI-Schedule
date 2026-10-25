@@ -1,6 +1,6 @@
-# Supabase Setup Guide for Antigravity AI Planner
+# Supabase Setup Guide for AI Schedule
 
-Antigravity AI Planner supports seamless hybrid cloud persistence with Supabase. When configured, your calendar events, tasks, habits, and notes are securely backed up and synchronized across devices in real time with Row Level Security (RLS).
+AI Schedule supports seamless hybrid cloud persistence with Supabase. When configured, your calendar events, tasks, habits, and notes are securely backed up and synchronized across devices in real time with Row Level Security (RLS).
 
 ---
 
