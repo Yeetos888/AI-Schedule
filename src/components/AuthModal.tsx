@@ -272,7 +272,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose }) => {
       if (res.ok) {
         sql = await res.text();
       } else {
-        sql = `-- Supabase schema for Antigravity AI Planner\n-- View supabase/schema.sql in the project`;
+        sql = `-- Supabase schema for AI Schedule\n-- View supabase/schema.sql in the project`;
       }
       await navigator.clipboard.writeText(sql);
       setSchemaCopied(true);
