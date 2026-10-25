@@ -69,10 +69,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSettings, onOpenAuth }) =>
             <div>
               <div className="flex items-center gap-2">
                 <span className="font-extrabold text-lg tracking-tight bg-gradient-to-r from-white via-slate-100 to-indigo-200 bg-clip-text text-transparent">
-                  Antigravity
+                  AI Schedule
                 </span>
                 <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
-                  AI Planner
+                  Smart Planner
                 </span>
               </div>
             </div>
