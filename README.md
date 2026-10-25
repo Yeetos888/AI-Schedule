@@ -1,90 +1,157 @@
-# Antigravity AI Planner
+<div align="center">
 
-An intelligent, browser-based personal planner powered by **Groq LLaMA 3.3** for lightning-fast AI features and **Supabase (PostgreSQL)** for cross-device cloud persistence and real-time synchronization.
+# ⚡ Antigravity AI Planner & Scheduler
+### An Intelligent Day Planner & Life OS Powered by Groq AI & Supabase Cloud
+
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-ai--schedule--dnv6.onrender.com-46E3B7?style=for-the-badge&logo=render&logoColor=black)](https://ai-schedule-dnv6.onrender.com)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Yeetos888%2FAI--Schedule-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Yeetos888/AI-Schedule)
+[![Supabase](https://img.shields.io/badge/Database-Supabase_PostgreSQL-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com)
+[![Groq](https://img.shields.io/badge/AI_Inference-Groq_LLaMA_3.3-F05A28?style=for-the-badge)](https://groq.com)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+
+<br />
+
+<p align="center">
+  <a href="https://ai-schedule-dnv6.onrender.com" target="_blank">
+    <img src="https://img.shields.io/badge/VIEW_LIVE_DEMO-4F46E5?style=for-the-badge&logo=googlechrome&logoColor=white" alt="View Live Demo" height="40"/>
+  </a>
+</p>
+
+<p align="center">
+  <b>Antigravity AI Planner</b> seamlessly blends a full-featured calendar, todo manager, habit tracker, and notes system with cutting-edge <b>Groq LLaMA 3.3 AI</b>. Everything is persistently stored in <b>Supabase PostgreSQL</b> with Row Level Security (RLS) and real-time syncing.
+</p>
+
+</div>
+
+---
+
+## 👥 Project Team
+
+<div align="center">
+
+| Role | Name | Profile / Contact |
+|---|---|---|
+| **Developer** | **Amaan** | [@Yeetos888](https://github.com/Yeetos888) |
+| **Mentor** | **Mohd Ismail** | Project Mentorship & Guidance |
+
+</div>
 
 ---
 
 ## 🌟 Key Features
 
-- **Full-featured Calendar**: Day, week, and month views powered by FullCalendar with drag-and-drop, color coding, and notes.
-- **Smart Task Management**: Categorized by priority (low, med, high), due dates, and completion status.
-- **Habit Tracker**: Visual 7-day progress grids, streak tracking, and completion rates.
-- **Notes & Ideas**: Markdown-ready note-taking with tag filtering.
-- **AI Day Planner**: Converts your open tasks and existing calendar events into an optimized, time-blocked schedule with conflict validation.
-- **AI Chat Assistant with Tool Calling**: Converse with your planner to list, add, move, or delete calendar events and tasks with confirmation protection.
-- **AI Weekly Summaries & Habit Reflection**: Synthesizes upcoming deadlines and weekly routines into actionable insights.
-- **Supabase Cloud Persistence**:
-  - Secure PostgreSQL cloud database storage for **ALL** data:
-    - Calendar Events
-    - Tasks & Todos
-    - Habits & Completion Logs
-    - Notes & Tags
-    - **Full AI Chat History & Tool Execution Logs**
-    - **AI Generated Day Plans & Weekly Summaries**
-    - User Preferences & Settings
-  - Row Level Security (RLS) ensures total privacy (data is tied to `auth.uid()`).
-  - Real-time updates across multiple tabs/devices.
-  - Local-first architecture: Works offline seamlessly using browser `localStorage` when disconnected.
+### 📅 1. Interactive Calendar (FullCalendar)
+- Day, Week, and Month views with smooth animations.
+- Drag-and-drop event rescheduling, duration resizing, custom color coding, and detailed markdown notes.
+
+### 📋 2. Smart Task Management
+- Prioritize tasks (`High`, `Med`, `Low`) with estimated completion times (minutes).
+- Due date tracking and one-click completion toggling with celebratory confetti effects.
+
+### 🔥 3. Habit Tracker & Streaks
+- Visual 7-day completion matrices for tracking routines (wellness, health, reading, etc.).
+- Real-time weekly streak calculations and consistency tracking.
+
+### 📝 4. Scratchpad Notes
+- Tagged personal notes with markdown formatting, instant search, and real-time edits.
+
+### 🤖 5. AI Day Planner & Conflict Resolver
+- Groq-powered day planning: converts your open tasks and calendar events into an optimized, conflict-free time-blocked schedule within working hours.
+- Automatic overlap detection and working-hours enforcement.
+
+### 💬 6. Conversational AI Assistant (Function Calling)
+- Real-time conversational agent capable of inspecting and modifying your planner directly via tool calls:
+  - `list_events`, `create_event`, `move_event`, `delete_event`
+  - `list_tasks`, `create_task`, `toggle_task`, `delete_task`
+- Safety confirmations guard all destructive operations (e.g., deleting or moving events).
+
+### ☁️ 7. Supabase Cloud Sync (PostgreSQL + RLS)
+- **Zero-Data-Loss Local-First**: Operates seamlessly in the browser via `localStorage` even when offline.
+- **Full Cloud Persistence**: Stores **all** planner data:
+  - Events, Tasks, Habits, Notes
+  - Full AI Chat History & Tool Execution Logs (`chat_messages`)
+  - AI Day Plans & Weekly Summaries (`ai_plans`)
+  - User Preferences & Settings (`user_settings`)
+- **Row Level Security (RLS)**: Enforces cryptographic user boundaries where `auth.uid() = user_id`.
+- **Flexible Auth**: Supports Email & Password, Passwordless Magic Links, and **Anonymous Guest Sign-Ins**.
 
 ---
 
-## 🚀 Getting Started
+## 🛠️ Technology Stack
 
-### 1. Prerequisites
-- Node.js (v18+)
-- npm
+| Layer | Technologies |
+|---|---|
+| **Frontend Framework** | React 19, TypeScript, Vite |
+| **Styling & Design** | Tailwind CSS v4, Lucide Icons, Glassmorphism UI |
+| **Calendar Engine** | FullCalendar (`@fullcalendar/react`) |
+| **State Management** | Zustand with `persist` (Local-First Architecture) |
+| **Cloud Database & Auth** | Supabase (`@supabase/supabase-js`, PostgreSQL with RLS) |
+| **AI Engine** | Groq Cloud API (LLaMA 3.3 70B & GPT-OSS models) |
+| **Deployment** | Render Static Site (`render.yaml` Blueprint) |
 
-### 2. Install Dependencies
+---
+
+## 🚀 Live Demo & Deployment
+
+| Resource | Link |
+|---|---|
+| **🌐 Production App** | [https://ai-schedule-dnv6.onrender.com](https://ai-schedule-dnv6.onrender.com) |
+| **📦 GitHub Repository** | [https://github.com/Yeetos888/AI-Schedule](https://github.com/Yeetos888/AI-Schedule) |
+| **🗄️ Database Schema** | [`supabase/schema.sql`](./supabase/schema.sql) |
+
+---
+
+## 💻 Local Development Setup
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/Yeetos888/AI-Schedule.git
+cd AI-Schedule
+```
+
+### 2. Install dependencies
 ```bash
 npm install
 ```
 
-### 3. Configure Environment Variables
-Copy `.env.example` to `.env`:
-```bash
-cp .env.example .env
-```
-Populate your keys:
+### 3. Configure environment variables
+Create a `.env` file in the project root:
 ```env
-# Groq API Key (https://console.groq.com/keys)
+# Groq API Key (Get at https://console.groq.com/keys)
 VITE_GROQ_API_KEY="gsk_..."
 
-# Supabase Credentials (https://supabase.com/dashboard -> Project Settings -> API)
+# Supabase Credentials (Get at https://supabase.com/dashboard -> Project Settings -> API)
 VITE_SUPABASE_URL="https://your-project.supabase.co"
 VITE_SUPABASE_ANON_KEY="eyJhbGciOi..."
 ```
-*(Note: You can also enter or update both the Groq API Key and Supabase credentials dynamically in the app's Settings & Cloud Sync UI!)*
 
-### 4. Setup Supabase Database
-1. Go to your [Supabase Dashboard](https://supabase.com/dashboard) and open the **SQL Editor**.
-2. Copy the entire contents of [`supabase/schema.sql`](./supabase/schema.sql) and click **Run**.
-3. All tables, RLS policies, and realtime publications will be configured automatically.
+### 4. Database Setup
+1. In your [Supabase Dashboard](https://supabase.com/dashboard), navigate to the **SQL Editor**.
+2. Run the complete [`supabase/schema.sql`](./supabase/schema.sql) script to provision all 5 tables and RLS security policies.
 
-### 5. Run Development Server
+### 5. Launch development server
 ```bash
 npm run dev
 ```
-
-### 6. Build for Production
-```bash
-npm run build
-```
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
-## 🌐 Deploy to Render (Static Site)
+## 📦 Building for Production
 
-This project is pre-configured with [`render.yaml`](./render.yaml) for zero-config static hosting on Render:
+```bash
+npm run build
+```
+The compiled, minified production assets will be generated in `./dist`.
 
-1. Push your repository to GitHub / GitLab.
-2. In the [Render Dashboard](https://dashboard.render.com), click **New +** → **Static Site** (or **Blueprint**).
-3. Connect your repository. Render will automatically detect the settings:
-   - **Build Command**: `npm install && npm run build`
-   - **Publish Directory**: `./dist`
-   - **SPA Rewrite Rule**: `/*` → `/index.html`
-4. Add your **Environment Variables** in the Render dashboard:
-   - `VITE_GROQ_API_KEY`: Your Groq API key
-   - `VITE_SUPABASE_URL`: Your Supabase project URL
-   - `VITE_SUPABASE_ANON_KEY`: Your Supabase anon key
-   - `NODE_VERSION`: `20`
-5. Click **Create Static Site** — your app will deploy in ~1 minute!
+---
+
+## 📄 License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+  <sub>Developed with ❤️ by <b>Amaan</b> under the mentorship of <b>Mohd Ismail</b>.</sub>
+</div>
