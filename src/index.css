@@ -1,0 +1,199 @@
+@import "tailwindcss";
+@import "@fullcalendar/react/skeleton.css";
+@import "@fullcalendar/react/themes/breezy/theme.css";
+@import "@fullcalendar/react/themes/breezy/palettes/indigo.css";
+
+@layer base {
+  :root {
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --border-color: #334155;
+    --accent-primary: #9333ea;
+    --accent-glow: rgba(147, 51, 234, 0.25);
+
+    /* FullCalendar Breezy Purple Palette */
+    --fc-breezy-primary: #9333ea !important;
+    --fc-breezy-primary-over: #a855f7 !important;
+    --fc-breezy-primary-foreground: #ffffff !important;
+    --fc-breezy-event: #9333ea !important;
+    --fc-breezy-event-contrast: #ffffff !important;
+    --fc-breezy-background-event: #7e22ce !important;
+    --fc-breezy-highlight: rgba(147, 51, 234, 0.15) !important;
+    --fc-breezy-now: #ec4899 !important;
+  }
+
+  [data-color-scheme="dark"], html.dark {
+    --fc-breezy-primary: #a855f7 !important;
+    --fc-breezy-primary-over: #c084fc !important;
+    --fc-breezy-primary-foreground: #ffffff !important;
+    --fc-breezy-event: #a855f7 !important;
+    --fc-breezy-event-contrast: #ffffff !important;
+    --fc-breezy-background-event: #9333ea !important;
+    --fc-breezy-highlight: rgba(168, 85, 247, 0.2) !important;
+    --fc-breezy-now: #f43f5e !important;
+    --fc-breezy-background: #0f172a !important;
+    --fc-breezy-popover: #1e293b !important;
+  }
+
+  html.light {
+    --bg-primary: #f8fafc;
+    --bg-secondary: #ffffff;
+    --text-primary: #0f172a;
+    --text-secondary: #64748b;
+    --border-color: #e2e8f0;
+    --accent-primary: #4f46e5;
+    --accent-glow: rgba(79, 70, 229, 0.15);
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+  }
+}
+
+/* Glassmorphism effects */
+.glass-panel {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.light .glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.light .glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.glass-card:hover {
+  border-color: rgba(99, 102, 241, 0.4);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.4);
+}
+
+/* FullCalendar Custom Theme Overrides */
+.calendar-wrapper {
+  color: #f8fafc;
+}
+
+/* Calendar Toolbar Title */
+.calendar-wrapper h2,
+.calendar-wrapper [class*="toolbarTitle"],
+.calendar-wrapper [class*="TitleClass"] {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 1.25rem !important;
+  letter-spacing: -0.02em !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Calendar Toolbar Buttons (Today, Prev, Next, Month, Week, Day) */
+.calendar-wrapper button {
+  color: #f1f5f9 !important;
+  font-weight: 600 !important;
+  font-size: 0.8125rem !important;
+  border-radius: 0.625rem !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  background-color: rgba(30, 41, 59, 0.75) !important;
+  padding: 0.45rem 0.85rem !important;
+  cursor: pointer !important;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.calendar-wrapper button:hover {
+  background-color: rgba(147, 51, 234, 0.25) !important;
+  border-color: rgba(168, 85, 247, 0.5) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 10px rgba(147, 51, 234, 0.25) !important;
+}
+
+/* Active Selected View (Month / Week / Day / Selected state) */
+.calendar-wrapper button[aria-pressed="true"],
+.calendar-wrapper button[class*="selected"],
+.calendar-wrapper button[class*="Oiq"],
+.calendar-wrapper button.fc-button-active {
+  background: linear-gradient(135deg, #9333ea, #7c3aed) !important;
+  border-color: #a855f7 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(147, 51, 234, 0.4) !important;
+}
+
+/* Day Header Labels */
+.calendar-wrapper [class*="dayHeader"],
+.calendar-wrapper [class*="HeaderInner"] {
+  color: #f8fafc !important;
+  font-weight: 600 !important;
+  font-size: 0.8125rem !important;
+  padding-block: 6px !important;
+}
+
+/* Time Gutter Slots (8 AM, 9 AM, etc.) */
+.calendar-wrapper [class*="slotHeader"],
+.calendar-wrapper [class*="slotHeaderInner"] {
+  color: #94a3b8 !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+}
+
+/* Event Cards on the Grid */
+.calendar-wrapper [class*="blockEvent"],
+.calendar-wrapper [class*="rowEvent"] {
+  background: linear-gradient(135deg, rgba(147, 51, 234, 0.9), rgba(124, 58, 237, 0.95)) !important;
+  border: 1px solid rgba(192, 132, 252, 0.5) !important;
+  border-radius: 8px !important;
+  padding: 4px 8px !important;
+  box-shadow: 0 4px 14px rgba(147, 51, 234, 0.3) !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 0.8125rem !important;
+  transition: all 0.15s ease-out !important;
+}
+
+.calendar-wrapper [class*="blockEvent"]:hover,
+.calendar-wrapper [class*="rowEvent"]:hover {
+  transform: translateY(-2px) scale(1.01) !important;
+  box-shadow: 0 8px 24px rgba(147, 51, 234, 0.45) !important;
+  border-color: rgba(216, 180, 254, 0.8) !important;
+}
+
+.calendar-wrapper [class*="blockEvent"] * {
+  color: #ffffff !important;
+}

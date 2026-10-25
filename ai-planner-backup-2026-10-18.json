@@ -1,0 +1,221 @@
+{
+  "version": 1,
+  "exportedAt": "2026-10-18T18:55:31.414Z",
+  "events": [
+    {
+      "id": "demo-evt-1",
+      "title": "Sprint Planning & Review",
+      "start": "2026-10-19T10:00:00",
+      "end": "2026-10-19T11:30:00",
+      "color": "#6366f1",
+      "notes": "Review team backlog and Q2 roadmap milestones"
+    },
+    {
+      "id": "demo-evt-2",
+      "title": "Product Sync & Demo",
+      "start": "2026-10-19T14:00:00",
+      "end": "2026-10-19T15:00:00",
+      "color": "#10b981",
+      "notes": "Demo new AI planner features to stakeholders"
+    },
+    {
+      "id": "demo-evt-3",
+      "title": "Design Critique Session",
+      "start": "2026-10-19T11:00:00",
+      "end": "2026-10-19T12:00:00",
+      "color": "#f59e0b",
+      "notes": "Review calendar and time-blocking interactions"
+    },
+    {
+      "title": "Team check-in",
+      "start": "2026-10-20T10:00:00",
+      "end": "2026-10-20T10:30:00",
+      "notes": "30‑minute team check‑in",
+      "color": "#10b981",
+      "id": "evt-1792348891603-wtywx"
+    },
+    {
+      "title": "Birthday party at Bob's home",
+      "start": "2026-10-20T20:00:00",
+      "end": "2026-10-20T23:00:00",
+      "notes": "Birthday celebration at Bob's house.",
+      "color": "#f59e0b",
+      "id": "evt-1792349011318-ctdh9"
+    },
+    {
+      "title": "Doctor's appointment",
+      "start": "2026-10-19T18:00:00",
+      "end": "2026-10-19T19:00:00",
+      "notes": "",
+      "color": "#9333ea",
+      "id": "evt-1792349403160-pca79"
+    }
+  ],
+  "tasks": [
+    {
+      "title": "Review Q3 metrics by Friday",
+      "priority": "high",
+      "due": "2026-10-23",
+      "done": false,
+      "id": "tsk-1792348886834-b4rln",
+      "createdAt": "2026-10-18T18:41:26.834Z"
+    },
+    {
+      "id": "demo-tsk-1",
+      "title": "Prepare presentation deck for Product Sync",
+      "due": "2026-10-19",
+      "priority": "high",
+      "done": false,
+      "estimateMin": 45,
+      "createdAt": "2026-10-18T18:31:42.185Z"
+    },
+    {
+      "id": "demo-tsk-2",
+      "title": "Review PR for Groq AI tool-calling loop",
+      "due": "2026-10-19",
+      "priority": "high",
+      "done": false,
+      "estimateMin": 30,
+      "createdAt": "2026-10-18T18:31:42.185Z"
+    },
+    {
+      "id": "demo-tsk-3",
+      "title": "Weekly grocery shopping & meal prep",
+      "due": "2026-10-19",
+      "priority": "med",
+      "done": false,
+      "estimateMin": 60,
+      "createdAt": "2026-10-18T18:31:42.185Z"
+    },
+    {
+      "id": "demo-tsk-4",
+      "title": "Read research paper on LLM agent scheduling",
+      "priority": "low",
+      "done": true,
+      "estimateMin": 40,
+      "createdAt": "2026-10-18T18:31:42.185Z"
+    }
+  ],
+  "habits": [
+    {
+      "id": "demo-hab-1",
+      "name": "Morning 20m Meditation & Breathwork",
+      "category": "Wellness",
+      "logs": [
+        "2026-10-19"
+      ],
+      "targetDaysPerWeek": 7,
+      "createdAt": "2026-10-18T18:31:42.185Z"
+    },
+    {
+      "id": "demo-hab-2",
+      "name": "Drink 2.5 Liters of Water",
+      "category": "Health",
+      "logs": [
+        "2026-10-19"
+      ],
+      "targetDaysPerWeek": 7,
+      "createdAt": "2026-10-18T18:31:42.185Z"
+    },
+    {
+      "id": "demo-hab-3",
+      "name": "Read 30 pages of non-fiction",
+      "category": "Growth",
+      "logs": [],
+      "targetDaysPerWeek": 5,
+      "createdAt": "2026-10-18T18:31:42.185Z"
+    }
+  ],
+  "notes": [
+    {
+      "id": "demo-note-1",
+      "title": "AI Planner Key Ideas",
+      "text": "Leverage Groq LLaMA 3.3 for lightning-fast planning, day scheduling, and conversational assistance. Tool calling allows direct manipulation of calendar and task stores.",
+      "createdAt": "2026-10-18T18:31:42.185Z",
+      "tags": [
+        "Architecture",
+        "AI"
+      ]
+    }
+  ],
+  "settings": {
+    "fastModel": "openai/gpt-oss-20b",
+    "smartModel": "openai/gpt-oss-120b",
+    "workingHoursStart": "09:00",
+    "workingHoursEnd": "18:00",
+    "timezone": "Asia/Calcutta",
+    "darkMode": true,
+    "groqApiKey": ""
+  },
+  "chatMessages": [
+    {
+      "id": "init-1",
+      "role": "assistant",
+      "content": "Hello! I'm your AI Planner Assistant. You can ask me to check your calendar, schedule meetings, create tasks, move events, or brainstorm your day. How can I help you right now?",
+      "timestamp": "2026-10-18T18:45:35.234Z"
+    },
+    {
+      "id": "user-1792349444144",
+      "role": "user",
+      "content": "move the doctors appointment to the current datw",
+      "timestamp": "2026-10-18T18:50:44.144Z"
+    },
+    {
+      "id": "asst-1792349446738",
+      "role": "assistant",
+      "content": "I see a **Doctor’s appointment** currently scheduled for **Friday, Oct 21 2026 at 10:00 PM – 11:00 PM**.\n\nTo move it to today (Monday, Oct 19 2026) I’ll need to know the time you’d like it to start (and end).  \nWould you like to keep the same 10 PM – 11 PM slot, or choose a different time today? Once you confirm the new time, I’ll go ahead and reschedule the event.",
+      "timestamp": "2026-10-18T18:50:46.738Z"
+    },
+    {
+      "id": "user-1792349493556",
+      "role": "user",
+      "content": "6PM-7PM today",
+      "timestamp": "2026-10-18T18:51:33.556Z"
+    },
+    {
+      "id": "asst-1792349495361",
+      "role": "assistant",
+      "content": "This action modifies or removes existing items. Please confirm below to proceed:\n\n✓ Action confirmed and executed.",
+      "timestamp": "2026-10-18T18:51:35.361Z"
+    },
+    {
+      "id": "user-1792349511602",
+      "role": "user",
+      "content": "list all the events for today",
+      "timestamp": "2026-10-18T18:51:51.602Z"
+    },
+    {
+      "id": "asst-1792349513049",
+      "role": "assistant",
+      "content": "Here are the events scheduled for **Monday, Oct 19 2026**:\n\n| Time (IST) | Event |\n|------------|-------|\n| 10:00 AM – 11:30 AM | Sprint Planning & Review |\n| 11:00 AM – 12:00 PM | Design Critique Session |\n| 02:00 PM – 03:00 PM | Product Sync & Demo |\n| 06:00 PM – 07:00 PM | Doctor’s appointment |\n\nLet me know if you’d like to adjust any of these, add new events, or create tasks!",
+      "timestamp": "2026-10-18T18:51:53.049Z"
+    },
+    {
+      "id": "user-1792349575061",
+      "role": "user",
+      "content": "Can i play with my friends for 5 hours today?",
+      "timestamp": "2026-10-18T18:52:55.061Z"
+    },
+    {
+      "id": "asst-1792349576692",
+      "role": "assistant",
+      "content": "I can fit a **5‑hour “Play with friends”** session today after your last scheduled event.\n\n**Proposed time:** Monday, Oct 19 2026 from **7:00 PM – 12:00 AM (midnight)** IST.\n\nPlease confirm if this works for you, and I’ll create the calendar entry.",
+      "timestamp": "2026-10-18T18:52:56.692Z"
+    },
+    {
+      "id": "user-1792349609092",
+      "role": "user",
+      "content": "what is the best time for this",
+      "timestamp": "2026-10-18T18:53:29.092Z"
+    },
+    {
+      "id": "asst-1792349610278",
+      "role": "assistant",
+      "content": "Based on today’s calendar, the only continuous 5‑hour window that’s completely free is:\n\n**🕖 7:00 PM – 12:00 AM (midnight) IST**\n\nAll earlier slots clash with either the Design Critique (11 AM‑12 PM), the Product Sync (2 PM‑3 PM), or your Doctor’s appointment (6 PM‑7 PM).\n\nIf that works for you, just let me know and I’ll add the “Play with friends” event. Otherwise, we can look at splitting the time or adjusting another appointment.",
+      "timestamp": "2026-10-18T18:53:30.278Z"
+    }
+  ],
+  "latestDayPlan": null,
+  "latestWeeklySummary": null,
+  "latestHabitReflection": null
+}
