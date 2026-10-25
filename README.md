@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ Antigravity AI Planner & Scheduler
+# ⚡ AI Schedule & Smart Planner
 ### An Intelligent Day Planner & Life OS Powered by Groq AI & Supabase Cloud
 
 [![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-ai--schedule--dnv6.onrender.com-46E3B7?style=for-the-badge&logo=render&logoColor=black)](https://ai-schedule-dnv6.onrender.com)
@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-  <b>Antigravity AI Planner</b> seamlessly blends a full-featured calendar, todo manager, habit tracker, and notes system with cutting-edge <b>Groq LLaMA 3.3 AI</b>. Everything is persistently stored in <b>Supabase PostgreSQL</b> with Row Level Security (RLS) and real-time syncing.
+  <b>AI Schedule</b> seamlessly blends a full-featured calendar, todo manager, habit tracker, and notes system with cutting-edge <b>Groq LLaMA 3.3 AI</b>. Everything is persistently stored in <b>Supabase PostgreSQL</b> with Row Level Security (RLS) and real-time syncing.
 </p>
 
 </div>
